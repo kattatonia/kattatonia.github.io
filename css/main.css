@@ -1007,164 +1007,6 @@ section,
 }
 
 /*--------------------------------------------------------------
-# About Section
---------------------------------------------------------------*/
-/* .about {
-  background-image: url('../img/about/about-background.webp');
-  background-size: cover;
-}
-
-.about .content .subtitle {
-  color: var(--accent-color);
-  font-weight: 700;
-  font-size: 0.875rem;
-  text-transform: uppercase;
-  margin-bottom: 1rem;
-}
-
-.about .content h2 {
-  font-size: 2.25rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-}
-
-.about .content p {
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
-  margin-bottom: 2rem;
-}
-
-.about .content .features-list {
-  list-style: none;
-  padding: 0;
-  margin-bottom: 2.5rem;
-}
-
-.about .content .features-list li {
-  display: flex;
-  align-items: center;
-  padding-bottom: 1rem;
-  font-weight: 500;
-}
-
-.about .content .features-list li i {
-  font-size: 1.25rem;
-  color: var(--accent-color);
-  margin-right: 0.75rem;
-}
-
-.about .content .btn-primary {
-  /* background-color: var(--accent-color);
-  border-color: var(--accent-color); 
-  color: var(--contrast-color);
-  padding: 0.75rem 2.5rem;
-  border-radius: 50px;
-  font-weight: 600;
-  transition: all 0.3s ease;
-}
-
-.about .content .btn-primary:hover {
-  background-color: color-mix(in srgb, var(--accent-color), black 10%);
-  border-color: color-mix(in srgb, var(--accent-color), black 10%);
-  transform: translateY(-2px);
-}
-
-.about .image-composition {
-  position: relative;
-  padding: 2rem;
-}
-
-@media (max-width: 768px) {
-  .about .image-composition {
-    padding: 1rem;
-  }
-}
-
-.about .image-composition .image-main {
-  position: relative;
-  z-index: 2;
-}
-
-.about .image-composition .image-main img {
-  border-radius: 8px;
-  box-shadow: 0 15px 40px color-mix(in srgb, var(--default-color), transparent 85%);
-  border: 5px solid color-mix(in srgb, var(--default-color), transparent 70%);
-}
-
-.about .image-composition .image-secondary {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 45%;
-  z-index: 3;
-}
-
-.about .image-composition .image-secondary img {
-  border-radius: 8px;
-  border: 5px solid color-mix(in srgb, var(--default-color), transparent 70%);
-  box-shadow: 0 10px 30px color-mix(in srgb, var(--default-color), transparent 80%);
-}
-
-.about .image-composition .stats-card {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 4;
-  background: var(--surface-color);
-  padding: 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 10px 30px color-mix(in srgb, var(--default-color), transparent 90%);
-  display: flex;
-  gap: 2rem;
-}
-
-@media (max-width: 576px) {
-  .about .image-composition .stats-card {
-    padding: 1rem;
-    gap: 1rem;
-    flex-direction: column;
-  }
-}
-
-.about .image-composition .stats-card .stats-item {
-  text-align: center;
-}
-
-.about .image-composition .stats-card .stats-item h3 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: var(--accent-color);
-  margin: 0;
-  line-height: 1;
-}
-
-@media (max-width: 992px) {
-  .about .image-composition .stats-card .stats-item h3 {
-    font-size: 2rem;
-  }
-}
-
-.about .image-composition .stats-card .stats-item p {
-  margin: 0;
-  font-size: 0.8rem;
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
-  font-weight: 500;
-  margin-top: 0.5rem;
-}
-
-.about .image-composition::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 90%;
-  height: 90%;
-  background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
-  border-radius: 12px;
-  z-index: 1;
-} */
-
-/*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
 .services {
@@ -1621,6 +1463,150 @@ section,
   background-image: url('../img/why-us/why-us-background.webp');
   flex-wrap: wrap;
   overflow-x: wrap;
+}
+
+/*--------------------------------------------------------------
+# YouTube Section
+--------------------------------------------------------------*/
+.youtube .video section{
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, var(--background-color) 0%, color-mix(in srgb, var(--accent-color), transparent 95%) 100%);
+  padding: 10px 0;
+}
+
+.youtube .video-content h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .youtube .video-content h1 {
+    font-size: 2.5rem;
+  }
+}
+
+.youtube .video-content p {
+  font-size: 1.2rem;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+
+@media (max-width: 768px) {
+  .youtube .hero-stats {
+    justify-content: center;
+    gap: 1.5rem;
+  }
+}
+
+.youtube .hero-visual {
+  position: relative;
+}
+
+.youtube .hero-visual .hero-image {
+  position: relative;
+  z-index: 2;
+}
+
+.youtube .hero-visual .hero-image img {
+  border-radius: 20px;
+}
+
+.youtube .youtube-bg-elements {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.youtube .youtube-bg-elements .bg-shape {
+  position: absolute;
+  border-radius: 50%;
+  background: linear-gradient(135deg, color-mix(in srgb, var(--accent-color), transparent 90%), color-mix(in srgb, var(--accent-color), transparent 95%));
+}
+
+.youtube .youtube-bg-elements .bg-shape.shape-1 {
+  width: 300px;
+  height: 300px;
+  top: -150px;
+  right: -150px;
+  animation: rotate 20s linear infinite;
+}
+
+.youtube .youtube-bg-elements .bg-shape.shape-2 {
+  width: 200px;
+  height: 200px;
+  bottom: -100px;
+  left: -100px;
+  animation: rotate 15s linear infinite reverse;
+}
+
+.youtube .youtube-bg-elements .bg-particles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: radial-gradient(circle, color-mix(in srgb, var(--accent-color), transparent 85%) 1px, transparent 1px);
+  background-size: 50px 50px;
+  animation: moveParticles 30s linear infinite;
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes moveParticles {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(50px, 50px);
+  }
+}
+
+@media (max-width: 992px) {
+  .youtube .youtube-content {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .youtube .youtube-buttons {
+    justify-content: center;
+  }
+
+  .youtube .youtube-stats .stat-item .stat-number {
+    font-size: 1.5rem;
+  }
 }
 
 /*--------------------------------------------------------------
