@@ -1370,12 +1370,6 @@ section,
   background-image: url('../img/why-us/why-us-background.webp');
   flex-wrap: wrap;
   overflow-x: wrap;
-  
-}
-
-.why-us .container {
-  align-items: center;
-  margin: auto;
 }
 
 .why-us .feature-card {
@@ -1617,6 +1611,17 @@ section,
     margin: 0 auto;
   }
 } 
+
+/*--------------------------------------------------------------
+# Stream Section
+--------------------------------------------------------------*/
+.stream {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-image: url('../img/why-us/why-us-background.webp');
+  flex-wrap: wrap;
+  overflow-x: wrap;
+}
 
 /*--------------------------------------------------------------
 # Portfolio Details Section
